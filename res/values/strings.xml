@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Reel Capacity</string>
+
+
+    <string name="about_us">About Us</string>
+    <string name="metallic_reels">Metallic Reels</string>
+    <string name="wooden_reels">Wooden Reels</string>
+
+</resources>

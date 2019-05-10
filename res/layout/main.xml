@@ -1,0 +1,200 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="top"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Main" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:src="@drawable/drum" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView_F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F="
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/EditText_Flang"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Flang"
+            android:inputType="number" >
+
+            <requestFocus />
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView_mm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mm"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TextView_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    B="
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/EditText_Barrel"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Barrel"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/TextView_mm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mm"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView_T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T="
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/EditText_Trav"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Trav."
+            android:inputType="number" >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/TextView_mm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mm"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TextView_E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    E="
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/EditText_Empty"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Empty"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/TextView_mm4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mm"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView_D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D="
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/EditText_Diameter"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Diameter of Cable"
+            android:inputType="number|numberDecimal" />
+
+        <TextView
+            android:id="@+id/TextView_mm5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mm"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/button_Calculate"
+            style="android:buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="104dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.03"
+            android:text="Calculate" />
+
+        <TextView
+            android:id="@+id/TextView_Length"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="Length of Cable"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TextView_mm6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.03"
+            android:text="m"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</TableLayout>
